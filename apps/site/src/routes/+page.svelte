@@ -39,7 +39,7 @@
   }
 
   async function send () {
-    const r = await fetch('/api', { credentials: 'include' })
+    const r = await fetch('http://api.local.com:3001/api', { credentials: 'include' })
 
     clientSide = await r.json()
   }
